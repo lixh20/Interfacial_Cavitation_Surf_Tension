@@ -137,7 +137,7 @@ I1 = tr(Cdis_3D)
 J  = det(C_3D)**(0.5)
 
 # Elastic free energy
-psi = Gshear/2*(I1-3) +  p*(J-1) -(Kbulk/2.0)*p**2.0
+psi = Gshear/2*(I1-3) +  p*(J-1) -(1/(2.0*Kbulk))*p**2.0
 psi_main =Gshear/2*(I1-3)
 
 # Calculate second Piola stress using automatic differentiation
